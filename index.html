@@ -3,317 +3,20 @@
 <head>
   <title>CRSC Website</title>
   <script src="https://kit.fontawesome.com/257615768d.js" crossorigin="anonymous"></script>
-  <style>
-    
-    /* Navbar styles */
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background-color: #ffffff;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  background-image: linear-gradient(to bottom, #344e41,#588157);
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-
-.nav-links li {
-  margin-right: 15px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.dropdown {
-  display: none;
-  /* Add dropdown styling */
-}
-
-/* Add hover or click event styling for dropdown */
-.dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #dad7cd;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #a3b18a;
-    }
-
-    /* Navbar styles */
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      padding: 10px;
-      color: #fff;
-    }
-
-    .navbar ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .navbar li {
-      display: inline-block;
-      margin-right: 10px;
-    }
-
-    .navbar li a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .navbar .logo {
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      background-color: #fff;
-      border-radius: 50%;
-      margin-left: 10px;
-    }
-
-/* Animated underline effect */
-.underline-reveal {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  padding-bottom: 5px;
-}
-
-.underline-reveal::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  transform: translateX(-100%);
-  transition: transform 0.3s;
-}
-
-.underline-reveal:hover::after {
-  transform: translateX(0);
-}
-
-/* Hero section styles */
-.hero-section {
-  position: relative;
-  height: 600px;
-  background-image: url('Untitled design.png');
-  
-  background-size: cover;
-  background-position: center;
-}
-    .banner-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .banner {
-      width: 400px;
-      height: 100px;
-      margin-bottom: 20px;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: #fff;
-      font-size: 18px;
-      overflow: hidden;
-      transition: height 0.3s ease;
-    }
-
-.banner:hover {
-  height: auto;
-}
-
-    #registration {
-  background-color: #aaf6d6;
-  padding: 40px;
-  text-align: center;
-  background-image: linear-gradient(to bottom,#a3b18a,#588157);
-}
-
-    #registration h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-
-    #registration form {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #registration form div {
-      margin-bottom: 20px;
-    }
-
-    #registration form label {
-      display: block;
-      font-size: 18px;
-    }
-
-    #registration form input,
-    #registration form select {
-      padding: 10px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .btn-register {
-  padding: 10px 20px;
-  font-size: 16px;
-}
-
-    #registration form input[type="submit"] {
-      background-color: #2b9348;
-      color: #fff;
-      cursor: pointer;
-    }
-
-    #registration form input[type="submit"]:hover {
-      background-color: #55a630;
-    }
-    #additional-section {
-  background-color: #dad7cd;
-  padding: 40px 20px;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  background-color: var(--bistre);
-  padding: 20px;
-  color: white;
-}
-
-.grid-item {
-  padding: 20px;
-  background-color: #a3b18a;
-  text-align: center;
-  transition: background-color 0.3s;
-  cursor: pointer;
-}
-
-.grid-item:hover {
-  background-color: #588157;
-  
-}
-
-.grid-item h3 {
-  color: #344e41;
-}
-.grid-item h3:hover {
-  color: #dad7cd;
-}
-
-.grid-item p {
-  color: #2F220D;
-}
-footer {
-  background-color: #344e41;
-  padding: 20px;
-  color: white;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-logo img {
-  width: 50px;
-  height: 50px;
-}
-
-.footer-links a {
-  color: white;
-  margin-right: 15px;
-  text-decoration: none;
-}
-
-.footer-social a {
-  color: white;
-  margin-right: 10px;
-  text-decoration: none;
-}
-
-.footer-text {
-  text-align: center;
-  margin-top: 10px;
-}
-
-    
-    
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <script>document.getElementById('banner1').addEventListener('click', function() {
     var expandedContent = this.querySelector('.expanded-content');
     expandedContent.classList.toggle('show');
   });
+  function openForm() {
+  document.getElementById("popupForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("popupForm").style.display = "none";
+}
+
   </script>
 <body>
     <header>
@@ -420,6 +123,20 @@ footer {
                 </div>
               </li>
             </ul>
+            <a href="#" class="cta-button" onclick="openForm()">Register Now</a>
+
+<div id="popupForm" class="form-popup">
+  <form class="form-container">
+    <h2>Create your Account</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <button type="submit" class="btn">Register</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
             <div class="logo">
                 <img src="MSCS_LOGO.png" alt="logo">
             </div>
@@ -429,28 +146,26 @@ footer {
   <section class="hero-section">
     <div class="banner-container">
         <div class="banner" id="banner1">
-            <h3>Multi State Cooperative Societies ACT, 2002</h3>
+            <h2>Multi State Cooperative Societies ACT, 2002</h2>
             <p  class="expanded-content">An Act to consolidate and amend the law relating to co-operative societies, with objects not confined to one State and serving the interests of members in more than one State, to facilitate the voluntary formation and democratic functioning of co-operatives as people's institutions based on self-help and mutual aid and to enable them to promote their economic and social betterment and to provide functional autonomy, was being felt necessary by the various cooperative societies, and federation of various cooperative societies as well as by the Government. In order to achieve the objective The Multi State Cooperative Societies Bill was introduced in the Parliament. The bill having been passed by both the Houses of Parliament received the assent of the President on 3rd July 2002 and it came on the Statute Book as The Multi State Cooperative Societies ACT 2002 (39 of 2002).</p>
           </div>
           
-      <div class="banner">Latest Hearings
+      <div class="banner"><h3>Latest Hearings</h3>
         <p class="expanded-content">Shree Ninaidevi Multi Specialty Cooperative Hospital and Research Center Ltd.,MAHARASHTRA
             Global Federation of Natural Farming Cooperative Ltd.,UTTAR PRADESH
             Tamil Nadu Multi State Societies Cooperative Housing Federation Ltd.,TAMIL NADU</p>
       </div>
-      <div class="banner">Latest Certificates
+      <div class="banner"><h3>Latest Certificates</h3>
         <p class="expanded-content">Mahesh Multi State Cooperative Credit Society Ltd.,MAHARASHTRA
             Chambal Agriculture Marketing Cooperative Ltd,MADHYA PRADESH
             Heaven Multi State Agro Cooperative Society Ltd,UTTAR PRADESH</p>
       </div>
-      <div class="banner">Latest Order Sheet
+      <div class="banner"><h3>Latest Order Sheet</h3>
         <p class="expanded-content">Home Multi State Cooperative Housing Society Ltd
             Lokmanya Multipurpose Cooperative Society Limited, Belgaum, Karnataka: Order Sheet of Hearing held on 14.02.2022
             Lotus Agricultural and Marketing Cooperative Society Ltd., Pitampura, New Delhi: Order Sheet of Hearing held on 04.02.2022</p>
       </div>
-      <div class="banner">News/Events</div>
-      <div class="banner">Banner 6</div>
-      <div class="banner">Banner 7</div>
+      <div class="banner"><h3>News/Events</h3></div>
     </div>
   </section>
     <section id="registration">
@@ -486,6 +201,20 @@ footer {
         </div>
       </form>
     </section>
+    <section id="blog">
+      <div class="blog-post">
+        <h3>Article Title</h3>
+        <p>Article content goes here...</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+      <div class="blog-post">
+        <h3>Article Title</h3>
+        <p>Article content goes here...</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+      <!-- Add more blog posts as needed -->
+    </section>
+    
     <section id="additional-section">
         <div class="grid-container">
           <div class="grid-item">
@@ -526,6 +255,30 @@ footer {
           </div>
         </div>
       </section>
+      <section id="contact-us">
+        <h2>Contact Us</h2>
+        <form>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+          </div>
+          <div>
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+        <div class="illustration">
+          <img src="illustration-contact us.svg" alt="Customer Support Illustration">
+        </div>
+      </section>
+      
       <footer>
         <div class="footer-container">
           <div class="footer-logo">

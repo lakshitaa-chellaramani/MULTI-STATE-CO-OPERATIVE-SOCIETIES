@@ -8,16 +8,15 @@ Welcome to our CRCS website, a premier destination for accessing reliable inform
 ## Screenshots
 
 ### Homepage
-![Homepage](screenshots/homepage.png)
+![Homepage](https://github.com/lakshitaa-chellaramani/MULTI-STATE-CO-OPERATIVE-SOCIETIES/blob/main/screenshots/homepage.PNG)
 
 ### Services Section
-![Services Section](screenshots/services-section.png)
-
+![Services Section](https://github.com/lakshitaa-chellaramani/MULTI-STATE-CO-OPERATIVE-SOCIETIES/blob/main/screenshots/services.PNG)
 ### Blog or News Section
-![Blog or News Section](screenshots/blog-section.png)
+![Blog or News Section](https://github.com/lakshitaa-chellaramani/MULTI-STATE-CO-OPERATIVE-SOCIETIES/blob/main/screenshots/blog.PNG)
 
 ### Contact Us Section
-![Contact Us Section](screenshots/contact-us-section.png)
+![Contact Us Section](https://github.com/lakshitaa-chellaramani/MULTI-STATE-CO-OPERATIVE-SOCIETIES/blob/main/screenshots/contact.PNG)
 
 ---
 
